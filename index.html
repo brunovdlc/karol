@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="quiz-container" class="card">
+            <div class="card-body">
+                <h2 id="question" class="question"></h2>
+                <div class="options">
+    <div class="option-container">
+        <button class="option btn btn-outline-secondary bg-dark text-white" data-letter="A"></button>
+        <button class="option btn btn-outline-secondary bg-dark text-white" data-letter="B">Resposta 2</button>
+        <button class="option btn btn-outline-secondary bg-dark text-white" data-letter="C">Resposta 3</button>
+        <button class="option btn btn-outline-secondary bg-dark text-white" data-letter="D">Resposta 4</button>
+    </div>
+</div>
+
+                <div id="btn-container" class="btn-container hide">
+                    <button id="next-btn" class="btn btn-primary">Próxima Pergunta</button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+    <div id="result-container" class="card text-center bg-dark text-white hide">
+        <div class="card-body">
+            <h3>Resultado <i class="fas fa-poll"></i></h3>
+            <div id="result" class="result"></div>
+            <div class="message"></div>
+        </div>
+    </div>
+    <button id="restart-btn" class="btn btn-primary hide"><i class="fas fa-redo-alt"></i> Reiniciar Quiz</button>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

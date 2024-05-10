@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343a40; /* Fundo modo noturno */
+    color: #fff; /* Texto branco */
+}
+
+#quiz-container {
+    max-width: 800px; /* ou qualquer outro valor desejado */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #484F56; /* Fundo modo noturno */
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #3CB371; /* Verde */
+    color: #fff; /* Texto branco */
+}
+
+.wrong {
+    background-color: #FF6347; /* Vermelho */
+    color: #fff; /* Texto branco */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.question {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #000000; /* Azul */
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.option::before {
+    content: attr(data-letter);
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.option:hover {
+    background-color: #2E2E2E; /* Azul mais escuro */
+}
+
+
+.quiz-container {
+    max-width: 800px; /* ou qualquer outro valor desejado */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilos para o contêiner do resultado */
+.bg-dark {
+    background-color: #484F56 !important; /* Fundo modo noturno */
+}
+
+.text-white {
+    color: #fff !important; /* Texto branco */
+}
+
+/* Estilos para as mensagens de resultado */
+.result {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 18px;
+}
+
+/* Estilos para acertos e erros */
+.correct {
+    color: #28a745; /* Verde */
+}
+
+.wrong {
+    color: #dc3545; /* Vermelho */
+}
+
+
